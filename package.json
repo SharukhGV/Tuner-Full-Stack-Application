@@ -1,0 +1,30 @@
+{
+  "name": "pern-stack-labs-x3-all-in-one",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:init": "psql -U postgres -f db/schema.sql",
+    "db:seed": "psql -U postgres -f db/seed.sql",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SharukhGV/Tuner-Full-Stack-Application.git"
+  },
+  "author": "Sharukh GV PURSUIT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SharukhGV/Tuner-Full-Stack-Application/issues"
+  },
+  "homepage": "https://github.com/SharukhGV/Tuner-Full-Stack-Application#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.21",
+    "pg": "^8.9.0",
+    "pg-promise": "^11.3.0"
+  }
+}
